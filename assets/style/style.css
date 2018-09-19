@@ -1,0 +1,190 @@
+:root {
+    --aside-title-height: 92px; 
+    --ghost-white: #FDFDFF;
+}
+
+body::after {
+    position: absolute; width: 0; height: 0; overflow: hidden; z-index: -1;
+    content:
+        url(../img/wallet.jpg)
+        url(../img/1.png)
+        url(../img/2.png)
+        url(../img/3.png)
+}
+
+body {
+    margin: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.aside{
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(135deg, #6eb1e4 0%,#6ed5e4 100%);
+    float: left;
+}
+
+.content {
+    height: 100%;
+    width: 70%;
+    background-color:var(--ghost-white);
+    float: left;
+}
+
+.title {
+    height: var(--aside-title-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span {
+    font-size: 1.56em;
+    color: var(--ghost-white);
+}
+
+.cardPlaceSelected {
+    border: 1px solid #6dd0e3 !important;
+    transform: rotate3d(1, 1, 1, 5deg);
+    transition: 0.2s;
+}
+
+.cardPlaceActiv {
+    border: 3px solid #7ae4f9 !important;
+}
+
+.cardsList {
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    height: 30vh;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.cardsHolder {
+    height: calc(100% - var(--aside-title-height));
+    overflow: scroll;
+}
+
+.cardsList {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.cardPlace {
+    height: 100%;
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 30px #00000042;
+    transition: 0.2s;
+}
+
+#google_wallet {
+    background-image: url(../img/2.png);
+    background-size: 100% 100%;
+}
+
+#paypal {
+    background-image: url(../img/3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#visa {
+    background-image: url(../img/1.png);
+    background-size: 100% 100%;
+}
+#newTransaction {
+    position: absolute;
+    top: 16px;
+    left: calc(30% - 30px);
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: var(--ghost-white);
+    background-color: #7be8fe;
+    border-radius: 70px;
+    font-size: 2em;
+    box-shadow: 0px 0px 35px #00000047;
+    cursor: pointer;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+}
+
+.contentHeader {
+    height: var(--aside-title-height);
+    display: flex;
+    padding: 0px 12%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.56em;
+}
+
+.contentTitle{
+    color: #737373;
+}
+
+.saldo{
+    color: #6fbee4;
+}
+
+.expenseList {
+    height: 83%;
+    overflow: scroll;
+}
+
+li.listInfo {
+    display: grid;
+    align-items: center;
+    padding: 0px 6%;
+    grid-template-columns: 52px 1fr min-content;
+    margin-bottom: 3%;
+}
+
+.icon {
+    font-size: 2em;
+    color: #6fbee4;
+}
+
+.dealTitle {
+    color: #737373;
+    padding-bottom: 1%;
+    font-size: 1.2em;
+}
+
+.dealInfo {
+    color: #aaaaaa;
+    font-size: 0.7em;
+}
+
+
+.price {
+    color: #6fbee4;
+    white-space: nowrap;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    width: 70%;
+    background: linear-gradient(180deg, #ffffff00 0%,#fdfdfd 100%);
+}
+
+

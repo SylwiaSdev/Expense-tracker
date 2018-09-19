@@ -1,0 +1,85 @@
+#elDropdown {
+    position: absolute;
+    top: 97px;
+    background-color: #7be8fd;
+    left: 368px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    display: none;
+    z-index: 9;
+}
+
+#dropdown {
+    width: 180px;
+    height: 110px;
+    position: absolute;
+    top: 112px;
+    border-radius: 6px;
+    background-color: #7be8fe;
+    box-shadow: 0px 0px 35px #00000047;
+    display: none;
+    z-index: 9;
+}
+
+.addButton {
+    height: 55px;
+    line-height: 55px;
+    color: var(--ghost-white);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+#cardsBottom {
+    border-bottom: 1px solid var(--ghost-white);
+    box-shadow: 0px 1px 1px var(--ghost-white);
+}
+
+.dropdownOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.mobileDropdown {
+    position: absolute;
+    width: 175px;
+    height: 100px;
+    background-color: #7be8fe;
+    top: 69px;
+    left: 94px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 35px #00000047;
+    display: none;
+}
+
+.mobileButtom {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--ghost-white);
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+.mobileElDropdown {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #7be8fe;
+    transform: rotate(45deg);
+    top: 51px;
+    left: 220px;
+    display: none;
+}
+
+#mobileCard {
+    border-bottom: 1px solid var(--ghost-white);
+    box-shadow: 0px 1px 1px var(--ghost-white);
+}

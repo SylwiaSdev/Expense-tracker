@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#6fbee3">
+	
+	<title>Wallet</title>
+	
+	<meta name="description" content="Wallet" />
+	<meta name="keywords" content="wallet, " />
+	
+	<link rel="stylesheet" href="./assets/style/style.css" type="text/css"/>
+	<link rel="stylesheet" href="./assets/style/loader.css" type="text/css"/>
+	<link rel="stylesheet" href="./assets/style/dropdown.css" type="text/css"/>
+	<link rel="stylesheet" href="./assets/style/popupCard.css" type="text/css"/>
+	<link rel="stylesheet" href="./assets/style/popupTransaction.css" type="text/css"/>
+	<link rel="stylesheet" href="./assets/style/media.css" type="text/css"/>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<div class="aside">
+		<div class="title">
+			<span>My Wallet</span>
+		</div>
+		<div class="cardsHolder">
+			<ul class="cardsList" id="filterCards">
+				<div class="sk-folding-cube">
+					<div class="sk-cube1 sk-cube"></div>
+					<div class="sk-cube2 sk-cube"></div>
+					<div class="sk-cube4 sk-cube"></div>
+					<div class="sk-cube3 sk-cube"></div>
+				</div>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="MobileDropdownOverlay"></div>
+		<div class="mobileHeader">
+			<div class="mobileTitle">My Wallet</div>
+			<div class="addIcon"></div>
+			<div class="bar"></div>
+			<div class="mobileDropdown">
+				<div class="mobileButtom" id="mobileCard">Add card</div>
+				<div class="mobileButtom" id="mobileTransaction">Add transaction</div>
+			</div>
+			<div class="mobileElDropdown"></div>
+		</div>
+		<div class="contentHeader">
+			<div class="contentTitle">Balance</div>
+			<div class="saldo">0 PLN</div>
+		</div>
+		
+		<div class="expenseList">
+			<ul class="list">
+				<li class="listInfo">
+					<div class="icon"></div>
+					<div class="decription">
+						<div class="dealTitle">Loading</div>
+						<div class="dealInfo">Your data is loading...</div>
+					</div>
+					<div class="price"></div>
+				</li>
+			</ul>
+			<div class="shadow"></div>
+		</div>
+		<div id="newTransaction">+</div>
+		<div id="dropdown">
+			<div class="addButton" id="cardsBottom">Add card</div>
+			<div class="addButton" id="transactionsBottom">Add transaction</div>
+		</div>
+		<div id="elDropdown"></div>
+		<div class="dropdownOverlay"></div>
+		
+		<div class="popupHolder">
+			<div class="popupFormTransactions">
+				<div class="cardsSide">
+						<div class="closeButtonTransaction"></div>
+					<div class="popupFormTitle">Choose card</div>
+					<div class="cardsHolder">
+						<ul class="cardsList">
+						</ul>
+					</div>
+				</div>
+				<div class="infoSide">
+					<div class="addNewTransaction">
+						<div class="newTransactionTitle">Add new transaction</div>
+						<label for="typeOfTransactions">Type of transaction *</label>
+						<select id="typeOfTransactions" required>
+							<option value="true">Expense</option>
+							<option value="false">Payment</option>
+						</select>
+						<label for="titleTransaction">Transaction title *</label>
+						<input id="titleTransaction" type="text" required>
+						<label for="descriptionTransaction">Description of the transaction *</label>
+						<input id="descriptionTransaction" type="text" required>
+						<label for="amountTransaction">The value of the transaction *</label>
+						<input id="amountTransaction" type="number" required>
+						<div class="errorInfo"></div>
+					</div>
+					<button id="addTransaction">Add transaction</button>			
+				</div>
+			</div>
+		</div>	
+		
+		<div class="popupCardsHolder">
+			<div class="poupFormCards">
+				<div class="pictureSide">
+					<div class="pictureOverlay"></div>
+				</div>
+				<div class="cardInformation">
+					<div class="closeButton"></div>
+					<div class="addCardInfo">
+						<div class="popupTitle">Add card</div>
+						<label for="typeOfCards">Type of card</label>
+						<input id="typeOfCards" type="text">
+						<div class="cardNumberTitle">Card number</div>
+						<div class="cardNumber">
+							<input class="number" type="text" maxlength="4">
+							<input class="number" type="text" maxlength="4">
+							<input class="number" type="text" maxlength="4">
+							<input class="number" type="text" maxlength="4">
+						</div>
+						<label for="experationDate">Experation date</label>
+						<input id="experationDate" type="date">
+						<div class="error"></div>
+					</div>
+					<div class="buttomHolder">
+						<div class="buttomSaveCard">Save card</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="./assets/js/jquery.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase-database.js"></script>
+	
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+	
+	
+	</html>
