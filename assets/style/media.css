@@ -11,9 +11,32 @@
         width: 50px;
         line-height: 50px;
     }
-  }
+    .popupFormTransactions {
+        overflow:scroll;
+    }
+    .cardsHolder {
+        height: 100%;
+    }
+    .cardsSide {
+        width: 100%;
+        height: 100%;
+        float: initial;
+    }
+    .cardsSide .cardsList {
+        margin-top: 36%;
+    }
 
- @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .cardsSide .cardPlace {
+        margin-top: -16%;
+        width: 50%;
+    }
+    .infoSide {
+        width: 100%;
+        height: 100%;
+    }        
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
    #newTransaction {
         top: 16px;
         left: calc(30% - 30px);
@@ -35,7 +58,30 @@
         height: 50px;
         width: 50px;
         line-height: 50px;
-    }     
+    }
+    .popupFormTransactions {
+        overflow:scroll;
+    }
+    .cardsHolder {
+        height: 100%;
+    }
+    .cardsSide {
+        width: 100%;
+        height: 100%;
+        float: initial;
+    }
+    .cardsSide .cardsList {
+        margin-top: 36%;
+    }
+
+    .cardsSide .cardPlace {
+        margin-top: -16%;
+        width: 50%;
+    }
+    .infoSide {
+        width: 100%;
+        height: 100%;
+    }           
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -110,8 +156,8 @@
        height: 40px;
        width: 40px;
        position: absolute;
-       left: 266px;
-       top: 10px;
+       left: 80%;
+       top: 15px;
        cursor: pointer;
     
     }
@@ -140,6 +186,7 @@
     }
     .popupFormTitle {
         width: 100%;
+        margin-top: 40px;
     }
     .errorInfo {
         height: 100px;
@@ -151,7 +198,7 @@
         height: 40px;
         width: 40px;
         position: absolute;
-        left: 266px;
+        left: 80%;
         top: 15px;
         cursor: pointer;
         z-index: 50;
